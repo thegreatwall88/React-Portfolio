@@ -1,12 +1,34 @@
 function Resume() {
-  const frontendSkills = ['HTML/CSS', 'JavaScript', 'React', 'Responsive Design'];
-  const backendSkills = ['Node.js', 'Express', 'MongoDB', 'Git'];
+  const frontendSkills = [
+    'HTML/CSS', 
+    'JavaScript', 
+    'Bootstrap', 
+    'The DOM', 
+    'APIs', 
+    'jQuery', 
+    'JSON', 
+    'AJAX', 
+    'Progressive Web Apps (PWAs)', 
+    'React', 
+    'Responsive Design'
+  ];
+  
+  const backendSkills = [
+    'Node.js', 
+    'Express', 
+    'SQL', 
+    'MVC Paradigm', 
+    'Sequelize', 
+    'NoSQL', 
+    'MERN Stack', 
+    'Git'
+  ];
 
   return (
     <div className="resume-container">
       <h1>Resume</h1>
       <p>
-        Download my <a href="/resume.pdf" download>resume</a>.
+        Download my <a href="/resume.doc" download>resume</a>.
       </p>
 
       <div className="proficiencies-container">

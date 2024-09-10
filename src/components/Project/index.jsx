@@ -13,7 +13,7 @@ function Project({ title, imageUrl, description, githubLink, websiteLink }) {
         </h2>
         <p>{description}</p>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i> {/* GitHub icon */}
+          <i className="fab fa-github"></i>
         </a>
       </div>
     </div>

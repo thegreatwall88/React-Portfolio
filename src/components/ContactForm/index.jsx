@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { TextField, Button, Box, Typography, Alert } from '@mui/material';
-import './style.css';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -43,8 +42,30 @@ function ContactForm() {
   };
 
   return (
-    <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      sx={{
+        mt: 3,
+        p: 4,
+        borderRadius: '15px',
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
+        background: 'linear-gradient(145deg, #f0f0f0, #cacaca)',
+        maxWidth: '600px',
+        mx: 'auto',
+        transform: 'translateZ(0)',
+      }}
+    >
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+        sx={{
+          textAlign: 'center',
+          fontWeight: 'bold',
+          textShadow: '1px 1px 5px rgba(0, 0, 0, 0.2)',
+        }}
+      >
         Contact Me
       </Typography>
 
@@ -58,6 +79,11 @@ function ContactForm() {
         error={Boolean(errors.name)}
         helperText={errors.name}
         margin="normal"
+        sx={{
+          background: 'white',
+          boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.1)',
+          borderRadius: '5px',
+        }}
       />
 
       <TextField
@@ -71,6 +97,11 @@ function ContactForm() {
         error={Boolean(errors.email)}
         helperText={errors.email}
         margin="normal"
+        sx={{
+          background: 'white',
+          boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.1)',
+          borderRadius: '5px',
+        }}
       />
 
       <TextField
@@ -85,6 +116,11 @@ function ContactForm() {
         error={Boolean(errors.message)}
         helperText={errors.message}
         margin="normal"
+        sx={{
+          background: 'white',
+          boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.1)',
+          borderRadius: '5px',
+        }}
       />
 
       {errors.submit && (
@@ -92,7 +128,7 @@ function ContactForm() {
           {errors.submit}
         </Alert>
       )}
-      
+
       {successMessage && (
         <Alert severity="success" sx={{ mt: 2 }}>
           {successMessage}
@@ -103,7 +139,16 @@ function ContactForm() {
         type="submit"
         variant="contained"
         color="primary"
-        sx={{ mt: 2 }}
+        sx={{
+          mt: 2,
+          boxShadow: '0 5px 10px rgba(0, 0, 0, 0.2)',
+          transform: 'scale(1.05)',
+          transition: 'transform 0.2s',
+          '&:hover': {
+            boxShadow: '0 8px 15px rgba(0, 0, 0, 0.3)',
+            transform: 'scale(1.1)',
+          },
+        }}
       >
         Send
       </Button>

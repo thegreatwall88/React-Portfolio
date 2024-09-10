@@ -2,6 +2,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Project from '../components/Project';
 import portfolioImage from '../assets/portfolio-1.png'; 
 import datingImage from '../assets/dating.png'; 
+import pwaImage from '../assets/pwa.png'; 
+import blogImage from '../assets/techblog.jpeg'; 
 
 
 function Portfolio() {
@@ -17,19 +19,22 @@ function Portfolio() {
       title: "Dating Site",
       imageUrl: datingImage,
       description: "Postgres Database",
-      githubLink: "https://github.com/olivercappis/project-2"
+      githubLink: "https://github.com/olivercappis/project-2",
+      websiteLink: "https://loveconnect.onrender.com/"
     },
     {
-      title: "Run Buddy",
-      imageUrl: "url_to_your_runbuddy_image",
-      description: "Start Building Habits",
-      githubLink: "https://github.com/user/runbuddy"
+      title: "PWA Text Editor",
+      imageUrl: pwaImage,
+      description: "Online/Offline Text Editor",
+      githubLink: "https://github.com/thegreatwall88/PWA-Text-Editor",
+      websiteLink: "https://pwa-text-editor-dkzn.onrender.com/"
     },
     {
-      title: "Abstract Red Lights",
-      imageUrl: "url_to_your_abstract_red_image",
-      description: "Futuristic Design",
-      githubLink: "https://github.com/user/abstract-red"
+      title: "Tech Blog",
+      imageUrl: blogImage,
+      description: "Handlebar",
+      githubLink: "https://github.com/thegreatwall88/Blog-2.0",
+      websiteLink: "https://blog-2-0-bbec.onrender.com/"
     },
   ];
 

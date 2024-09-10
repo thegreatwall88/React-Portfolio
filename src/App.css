@@ -31,6 +31,7 @@ main {
     flex: 1;
     padding: 20px;
 }
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -49,6 +50,9 @@ main {
   
   .about-content {
     max-width: 600px;
+  }
+  .about-content p {
+    text-align: justify;
   }
 
 .resume-container {
