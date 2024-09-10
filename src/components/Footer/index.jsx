@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
-
+import './style.css'
 function Footer() {
   return (
     <footer>

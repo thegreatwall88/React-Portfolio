@@ -1,27 +1,33 @@
 function Resume() {
-  const skills = [
-    'JavaScript',
-    'React',
-    'HTML/CSS',
-    'Node.js',
-    'Express',
-    'MongoDB',
-    'Git',
-    'Responsive Design',
-  ];
+  const frontendSkills = ['HTML/CSS', 'JavaScript', 'React', 'Responsive Design'];
+  const backendSkills = ['Node.js', 'Express', 'MongoDB', 'Git'];
 
   return (
-    <div>
+    <div className="resume-container">
       <h1>Resume</h1>
       <p>
-        Download my <a href="/path-to-your-resume.pdf" download>resume</a>.
+        Download my <a href="/resume.pdf" download>resume</a>.
       </p>
-      <h2>Proficiencies</h2>
-      <ul>
-        {skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
-        ))}
-      </ul>
+
+      <div className="proficiencies-container">
+        <div className="frontend">
+          <h2>Frontend Proficiencies</h2>
+          <ul>
+            {frontendSkills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="backend">
+          <h2>Backend Proficiencies</h2>
+          <ul>
+            {backendSkills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
