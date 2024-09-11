@@ -4,7 +4,8 @@ import portfolioImage from '../assets/portfolio-1.png';
 import datingImage from '../assets/dating.png'; 
 import pwaImage from '../assets/pwa.png'; 
 import blogImage from '../assets/techblog.jpeg'; 
-
+import bookImage from '../assets/books.jpg'; 
+import payrollImage from '../assets/payroll.jpg'; 
 
 function Portfolio() {
   const projects = [
@@ -35,6 +36,20 @@ function Portfolio() {
       description: "Handlebar",
       githubLink: "https://github.com/thegreatwall88/Blog-2.0",
       websiteLink: "https://blog-2-0-bbec.onrender.com/"
+    },
+    {
+      title: "Book Search",
+      imageUrl: bookImage,
+      description: "API",
+      githubLink: "https://github.com/chrypixl/project-1",
+      websiteLink: "https://chrypixl.github.io/project-1/"
+    },
+    {
+      title: "Payroll Tracker",
+      imageUrl: payrollImage,
+      description: "Local Storage",
+      githubLink: "https://github.com/thegreatwall88/Payroll-Tracker",
+      websiteLink: "https://thegreatwall88.github.io/Payroll-Tracker/"
     },
   ];
 
