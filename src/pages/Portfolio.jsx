@@ -6,6 +6,8 @@ import pwaImage from '../assets/pwa.png';
 import blogImage from '../assets/techblog.jpeg'; 
 import bookImage from '../assets/books.jpg'; 
 import payrollImage from '../assets/payroll.jpg'; 
+import beatboxImage from '../assets/beatbox.png'; 
+import weatherImage from '../assets/weather.png'; 
 
 function Portfolio() {
   const projects = [
@@ -50,6 +52,20 @@ function Portfolio() {
       description: "Local Storage",
       githubLink: "https://github.com/thegreatwall88/Payroll-Tracker",
       websiteLink: "https://thegreatwall88.github.io/Payroll-Tracker/"
+    },
+    {
+      title: "Beat Box App",
+      imageUrl: beatboxImage,
+      description: "React, Apollo Server",
+      githubLink: "https://github.com/chrypixl/project-3/",
+      websiteLink: "https://project-3-aiv6.onrender.com/"
+    },
+    {
+      title: "Weather Dashboard",
+      imageUrl: weatherImage,
+      description: "API",
+      githubLink: "https://github.com/thegreatwall88/Weather-Dashboard",
+      websiteLink: "https://thegreatwall88.github.io/Weather-Dashboard/"
     },
   ];
 
